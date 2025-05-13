@@ -25,6 +25,12 @@ export async function POST(request: Request) {
             },
           ],
         },
+        'Signup Date': {
+          type: 'date',
+          date: {
+            start: new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' }),
+          },
+        },
       },
     });
 
@@ -37,3 +43,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }
+
+// https://www.notion.so/zekeso/1f2ed4e6cffa800fa5fcc5285cbed0c3?v=1f2ed4e6cffa809eb915000cc802bc98&pvs=4

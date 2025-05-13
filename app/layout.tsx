@@ -7,9 +7,9 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next.js + Notion — Waitlist Template",
+  title: "ZekeCal - Open Source AI Calendar Assistant",
   description:
-    "A simple Next.js waitlist template with Notion as CMS and Resend to send emails created with React Email and Upstash Redis for rate limiting. Deployed on Vercel.",
+    "Talk to your calendar with ZekeCal - Your AI Calendar Assistant. Seamlessly integrate with your existing calendar and manage your schedule with natural language.",
 };
 
 export default function RootLayout({
@@ -25,11 +25,11 @@ export default function RootLayout({
       <meta property="og:image:height" content="832" />
       <meta
         property="og:site_name"
-        content="Next.js + Notion — Waitlist Template"
+        content="ZekeCal - Open Source AI Calendar Assistant"
       />
       <meta
         property="og:url"
-        content="https://nextjs-notion-waitlist.vercel.app/"
+        content="https://calendar.zeke.so/"
       />
       <meta name="twitter:image" content="/twitter-image.png" />
       <meta name="twitter:image:type" content="image/png" />

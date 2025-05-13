@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import TextBlur from "@/components/ui/text-blur";
 import AnimatedShinyText from "@/components/ui/shimmer-text";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
+import {Calendar1} from 'lucide-react'
 
 export default function CTA() {
   return (
@@ -20,24 +21,27 @@ export default function CTA() {
         </div>
       </motion.div>
 
-      <motion.img
-        src="/logo.svg"
-        alt="logo"
-        className="mx-auto h-24 w-24"
-        variants={itemVariants}
-      />
+      <motion.div variants={itemVariants} className="flex justify-center">
+        <Calendar1 className="size-16 text-blue-500/75 mt-2 mb-4"/>
+      </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="A Simple Next.js Waitlist Template with Notion as CMS"
+          text="ZekeCal"
         />
+        <div className="py-2"/>
+        <TextBlur
+          className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
+          text="Chat with your Calendar"
+        />
+
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
           className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
-          text="Join the waitlist to get early access of the product and recieve updates on the progress!"
+          text="It's about time for a calendar that chats! Join the waitlist for early access and updates on our progress."
           duration={0.8}
         />
       </motion.div>

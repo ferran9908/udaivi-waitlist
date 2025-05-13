@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+    color="#3b82f6"
+    class="lucide lucide-calendar1-icon lucide-calendar-1">
+    <title>ZekeCal - Chat With your Calendar</title>
+    <defs>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900;display=swap');
+            <!-- @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400&amp;display=swap'); -->
+        </style>
+    </defs>
+    <path d="M11 14h1v4" />
+    <path d="M16 2v4" />
+    <path d="M3 10h18" />
+    <path d="M8 2v4" />
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <text x="12" y="26" font-family="'Figtree', sans-serif" font-size="2.5" fill="white" text-anchor="middle" stroke="none">ZekeCal</text>
+    <text x="12" y="29" font-family="'Figtree', sans-serif" font-size="2.5" fill="white" text-anchor="middle" stroke="none">Chat with your Calendar</text>
+</svg> 
