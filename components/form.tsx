@@ -39,7 +39,7 @@ export default function Form({
         <motion.div variants={itemVariants}>
           <Input
             type="text"
-            placeholder="Your Name"
+            placeholder="Your First Name"
             value={name}
             onChange={handleNameChange}
           />

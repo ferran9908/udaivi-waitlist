@@ -4,7 +4,6 @@ import {
   Head,
   Hr,
   Html,
-  Img,
   Preview,
   Text,
 } from "@react-email/components";
@@ -17,45 +16,41 @@ interface EmailProps {
 export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
   <Html>
     <Head />
-    <Preview>Thanks for Joining the Waitlist, {userFirstname}! 🎉</Preview>
+    <Preview>
+      {userFirstname}, Your Spot on the ZekeCal Waitlist is Booked! 🗓️💬
+    </Preview>
     <Body style={main}>
       <Container style={container}>
-        <Img
-          src={`https://cal.zeke.so/zeke-cal.png`}
-          width="220"
-          height="100"
-          alt="ZekeCal Logo"
-          style={logo}
-        />
-        <Text style={greeting}>Hi {userFirstname},</Text>
+        <Text style={paragraph}>Hey {userFirstname},</Text>
         <Text style={paragraph}>
-          Thanks for joining the waitlist for ZekeCal - An open source calendar that you can talk to! I'm Ferran, the developer behind this project. I'm glad to
-          have you on board.
+          Thanks for signing up for ZekeCal - A calendar you can chat with. I'm Ferran, the lead dev at <a href="https://zeke.so">Zeke</a>  {" "}
+          and also the creator of this project. 
         </Text>
         <Text style={paragraph}>
-          I'll keep you posted on the progress and notify you as soon as it's
-          ready for you to use. In the meantime, if you have any questions or
-          feedback, don't hesitate to reach out by replying directly to{" "}
-          <a href="mailto:ferran@zeke.so" style={link}>
-            this email {""}
-          </a>
-          or by booking a meeting with me <a href="https://cal.com/ferran">here</a>
-          — I'm here to listen!
+          ZekeCal is a calendar that you can actually{" "}
+          talk to. No more boring date entries - get ready to chat your
+          way to an organized life! I'm working around the clock to
+          get it ready for you.
         </Text>
         <Text style={paragraph}>
-          You can also follow me on X/Twitter for updates:{" "}
-          <a href="https://x.com/ferran9908" style={link}>
-            @ferran9908
-          </a>
+          I'm so excited, I can barely wait to show you what we've been{" "}
+          cooking! 🍳 In the meantime, you can watch a quick demo of the MVP here: <a href='https://youtu.be/C5k3jRC7JjM'>https://youtu.be/C5k3jRC7JjM</a>
         </Text>
-        <Text style={signOff}>
-          Best regards,
+        <Text style={paragraph}>
+          I'll ping you with updates and let you know as soon as ZekeCal is
+          ready to make an appearance on your devices.
+        </Text>
+        <Text style={paragraph}>
+          Got questions or just want to sync up? Simply reply to this email (or schedule a call with me <a href="https://cal.com/ferran">here</a>.)
+        </Text>
+        <Text style={paragraph}>
+          Stay tuned,
           <br />
           Ferran
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
-          You received this email because you signed up for the ZekeCal.
+          You're on this list because you signed up for ZekeCal.
           If you believe this is a mistake, feel free to ignore this email.
         </Text>
       </Container>
@@ -69,47 +64,26 @@ NotionWaitlistEmail.PreviewProps = {
 
 export default NotionWaitlistEmail;
 
+// Basic styles for readability, avoiding "fancy" styling
 const main = {
-  background: "linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)",
-  fontFamily: 'figtree, "Helvetica Neue", Helvetica, Arial, sans-serif',
-  padding: "40px 0",
-  color: "#cccccc",
+  backgroundColor: "#ffffff",
+  fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+  padding: "20px 0",
+  color: "#333333",
 };
 
 const container = {
   margin: "0 auto",
-  padding: "24px 32px 48px",
-  backgroundColor: "#1a1a1a",
-  borderRadius: "12px",
-  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
-  maxWidth: "600px",
-};
-
-const logo = {
-  margin: "0 auto",
-  paddingBottom: "20px",
-};
-
-const greeting = {
-  fontSize: "18px",
-  lineHeight: "28px",
+  padding: "20px",
+  maxWidth: "580px",
+  backgroundColor: "#f9f9f9",
+  borderRadius: "8px",
 };
 
 const paragraph = {
   fontSize: "16px",
-  lineHeight: "26px",
-  marginBottom: "20px",
-};
-
-const link = {
-  color: "#F7FF9B",
-  textDecoration: "underline",
-};
-
-const signOff = {
-  fontSize: "16px",
-  lineHeight: "26px",
-  marginTop: "20px",
+  lineHeight: "1.5",
+  marginBottom: "16px",
 };
 
 const hr = {
@@ -118,6 +92,11 @@ const hr = {
 };
 
 const footer = {
-  color: "#8c8c8c",
+  color: "#888888",
   fontSize: "12px",
+  lineHeight: "1.5",
 };
+
+const bold = {
+  fontWeight: 500
+}
