@@ -21,10 +21,10 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://nextjs-notion-waitlist.vercel.app/waitlist-logo.png`}
+          src={`https://cal.zeke.so/zeke-cal.png`}
           width="220"
           height="100"
-          alt="Notion Waitlist Logo"
+          alt="ZekeCal Logo"
           style={logo}
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
@@ -39,6 +39,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
           <a href="mailto:ferran@zeke.so" style={link}>
             this email {""}
           </a>
+          or by booking a meeting with me <a href="https://cal.com/ferran">here</a>
           — I'm here to listen!
         </Text>
         <Text style={paragraph}>
